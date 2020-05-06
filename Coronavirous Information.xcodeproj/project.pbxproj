@@ -78,6 +78,8 @@
 		3988EE58246276B4000C1C82 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
+				39C5088E245D113A00E81F12 /* IntroTableViewController.swift */,
+				39C50890245D1F8700E81F12 /* IntroContentViewController.swift */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -85,6 +87,8 @@
 		3988EE59246276C3000C1C82 /* Data Processing */ = {
 			isa = PBXGroup;
 			children = (
+				39C5088A245D0A0C00E81F12 /* data.swift */,
+				39C5088C245D0B6300E81F12 /* DataLoader.swift */,
 			);
 			path = "Data Processing";
 			sourceTree = "<group>";
@@ -92,6 +96,11 @@
 		3988EE5A246277BC000C1C82 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				391CF9732462244E00B3E886 /* GraphTabBarViewController.swift */,
+				39C50898245D600D00E81F12 /* GraphWorldViewController.swift */,
+				39C5089A245D602200E81F12 /* GraphUSViewController.swift */,
+				39C5089C245D603600E81F12 /* GraphStateViewController.swift */,
+				39C5089E245D606500E81F12 /* GraphRateViewController.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -129,16 +138,7 @@
 				39C5087F245CFFAB00E81F12 /* LaunchScreen.storyboard */,
 				39C50882245CFFAB00E81F12 /* Info.plist */,
 				39C5087A245CFFAA00E81F12 /* Coronavirous_Information.xcdatamodeld */,
-				39C5088A245D0A0C00E81F12 /* data.swift */,
-				39C5088C245D0B6300E81F12 /* DataLoader.swift */,
 				39C50892245D32F700E81F12 /* HomeViewController.swift */,
-				39C5088E245D113A00E81F12 /* IntroTableViewController.swift */,
-				39C50890245D1F8700E81F12 /* IntroContentViewController.swift */,
-				391CF9732462244E00B3E886 /* GraphTabBarViewController.swift */,
-				39C50898245D600D00E81F12 /* GraphWorldViewController.swift */,
-				39C5089A245D602200E81F12 /* GraphUSViewController.swift */,
-				39C5089C245D603600E81F12 /* GraphStateViewController.swift */,
-				39C5089E245D606500E81F12 /* GraphRateViewController.swift */,
 				399E6D532460076F00973F10 /* EarthNode.swift */,
 				3988EE5B246279F2000C1C82 /* Reference.txt */,
 			);
