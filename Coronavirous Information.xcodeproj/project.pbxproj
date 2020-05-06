@@ -29,6 +29,7 @@
 		39C508A2245D671F00E81F12 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 39C508A1245D671F00E81F12 /* Charts */; };
 		D65B4A26246269530024A3C2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65B4A24246269530024A3C2 /* GameScene.swift */; };
 		D65B4A27246269530024A3C2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65B4A25246269530024A3C2 /* GameViewController.swift */; };
+		D6825B0D2462727900CD70BF /* GameMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6825B0C2462727900CD70BF /* GameMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		39C5089E245D606500E81F12 /* GraphRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphRateViewController.swift; sourceTree = "<group>"; };
 		D65B4A24246269530024A3C2 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D65B4A25246269530024A3C2 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D6825B0C2462727900CD70BF /* GameMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				D65B4A24246269530024A3C2 /* GameScene.swift */,
 				D65B4A25246269530024A3C2 /* GameViewController.swift */,
+				D6825B0C2462727900CD70BF /* GameMenuController.swift */,
 			);
 			path = GameCode;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				39C5088B245D0A0C00E81F12 /* data.swift in Sources */,
 				391CF9742462244E00B3E886 /* GraphTabBarViewController.swift in Sources */,
 				39C5087C245CFFAA00E81F12 /* Coronavirous_Information.xcdatamodeld in Sources */,
+				D6825B0D2462727900CD70BF /* GameMenuController.swift in Sources */,
 				D65B4A27246269530024A3C2 /* GameViewController.swift in Sources */,
 				39C5089F245D606500E81F12 /* GraphRateViewController.swift in Sources */,
 				39C50891245D1F8700E81F12 /* IntroContentViewController.swift in Sources */,
