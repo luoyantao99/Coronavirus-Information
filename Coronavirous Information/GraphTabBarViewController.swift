@@ -13,16 +13,22 @@ import UIKit
 class GraphTabBarViewController: UITabBarController {
     
     let DL = DataLoader()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        DL.load_country_info()
+        
+        DL.load_newest_data()
         let worldvc = self.viewControllers![0] as! GraphWorldViewController
         let usvc = self.viewControllers![1] as! GraphUSViewController
         let statevc = self.viewControllers![2] as! GraphStateViewController
         let ratevc = self.viewControllers![3] as! GraphRateViewController
         
-        worldvc.inputgraphobj = DL.globaldataobj
+        
+        worldvc.inputgraphobj = DL.countryinfoarr
         usvc.inputgraphobj = DL.historydatadarr
         statevc.inputgraphobj = DL.statedataarr
         

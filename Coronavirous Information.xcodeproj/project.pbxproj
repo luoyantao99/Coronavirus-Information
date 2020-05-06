@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		391CF9742462244E00B3E886 /* GraphTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CF9732462244E00B3E886 /* GraphTabBarViewController.swift */; };
+		3988EE5C246279F3000C1C82 /* Reference.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3988EE5B246279F2000C1C82 /* Reference.txt */; };
+		3988EEA42462B311000C1C82 /* country.json in Resources */ = {isa = PBXBuildFile; fileRef = 3988EEA32462B311000C1C82 /* country.json */; };
 		399E6D542460076F00973F10 /* EarthNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399E6D532460076F00973F10 /* EarthNode.swift */; };
 		39C50872245CFFAA00E81F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C50871245CFFAA00E81F12 /* AppDelegate.swift */; };
 		39C50874245CFFAA00E81F12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C50873245CFFAA00E81F12 /* SceneDelegate.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		391CF9732462244E00B3E886 /* GraphTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTabBarViewController.swift; sourceTree = "<group>"; };
+		3988EE5B246279F2000C1C82 /* Reference.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Reference.txt; sourceTree = "<group>"; };
+		3988EEA32462B311000C1C82 /* country.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = country.json; sourceTree = "<group>"; };
 		399E6D532460076F00973F10 /* EarthNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthNode.swift; sourceTree = "<group>"; };
 		39C5086E245CFFAA00E81F12 /* Coronavirous Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coronavirous Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C50871245CFFAA00E81F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3988EE58246276B4000C1C82 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
+		3988EE59246276C3000C1C82 /* Data Processing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Processing";
+			sourceTree = "<group>";
+		};
+		3988EE5A246277BC000C1C82 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		39C50865245CFFAA00E81F12 = {
 			isa = PBXGroup;
 			children = (
@@ -90,11 +115,15 @@
 		39C50870245CFFAA00E81F12 /* Coronavirous Information */ = {
 			isa = PBXGroup;
 			children = (
+				3988EE5A246277BC000C1C82 /* Graph */,
+				3988EE59246276C3000C1C82 /* Data Processing */,
+				3988EE58246276B4000C1C82 /* Introduction */,
 				D65B4A23246268B20024A3C2 /* GameCode */,
 				39C50871245CFFAA00E81F12 /* AppDelegate.swift */,
 				39C50873245CFFAA00E81F12 /* SceneDelegate.swift */,
 				39C50875245CFFAA00E81F12 /* ViewController.swift */,
 				39C50888245D09B600E81F12 /* introduction.json */,
+				3988EEA32462B311000C1C82 /* country.json */,
 				39C50877245CFFAA00E81F12 /* Main.storyboard */,
 				39C5087D245CFFAB00E81F12 /* Assets.xcassets */,
 				39C5087F245CFFAB00E81F12 /* LaunchScreen.storyboard */,
@@ -111,6 +140,7 @@
 				39C5089C245D603600E81F12 /* GraphStateViewController.swift */,
 				39C5089E245D606500E81F12 /* GraphRateViewController.swift */,
 				399E6D532460076F00973F10 /* EarthNode.swift */,
+				3988EE5B246279F2000C1C82 /* Reference.txt */,
 			);
 			path = "Coronavirous Information";
 			sourceTree = "<group>";
@@ -191,6 +221,8 @@
 			files = (
 				39C50881245CFFAB00E81F12 /* LaunchScreen.storyboard in Resources */,
 				39C5087E245CFFAB00E81F12 /* Assets.xcassets in Resources */,
+				3988EEA42462B311000C1C82 /* country.json in Resources */,
+				3988EE5C246279F3000C1C82 /* Reference.txt in Resources */,
 				39C50879245CFFAA00E81F12 /* Main.storyboard in Resources */,
 				39C50889245D09B600E81F12 /* introduction.json in Resources */,
 			);

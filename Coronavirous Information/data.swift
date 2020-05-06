@@ -137,3 +137,9 @@ struct rate_inf:Codable  {
 
 
 
+struct country_info: Codable{
+    var name:String
+    var x:Int
+    var y:Int
+    var confirmed:[Int]
+}

@@ -75,7 +75,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cnq-He-dOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="695"/>
+            <point key="canvasLocation" x="310" y="721"/>
         </scene>
         <!--Intro Table View Controller-->
         <scene sceneID="atR-Is-2Ca">
@@ -136,7 +136,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="L1n-vI-fsD" kind="show" id="L7x-7f-4MK"/>
+                                    <segue destination="L1n-vI-fsD" kind="show" identifier="Hometograph_segue" id="L7x-7f-4MK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wish you safe and healthy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UV-yY-bJG">
@@ -153,7 +153,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rGX-Q1-MGI" kind="show" id="1nq-zc-IIO"/>
+                                    <segue destination="rGX-Q1-MGI" kind="show" identifier="HometoMiniGame_segue" id="1nq-zc-IIO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -175,10 +175,6 @@
                         <viewLayoutGuide key="safeArea" id="bRd-v4-aRy"/>
                     </view>
                     <navigationItem key="navigationItem" id="C0G-Aj-k7O"/>
-                    <connections>
-                        <outlet property="Hometograph" destination="YWD-he-U9D" id="DbC-hF-DnC"/>
-                        <outlet property="hometointro" destination="FuB-B8-cnP" id="k9B-9v-3hX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uA-sL-QpX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,8 +379,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PoP-vl-mfw">
-                                <rect key="frame" x="0.0" y="108" width="414" height="579"/>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PoP-vl-mfw">
+                                <rect key="frame" x="0.0" y="104.33333333333331" width="414" height="512.66666666666674"/>
                             </sceneKitView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmed Case in the world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enA-Mw-ltD">
                                 <rect key="frame" x="40" y="57" width="315" height="30"/>
@@ -392,16 +388,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="joz-qT-fWr">
+                                <rect key="frame" x="23" y="618" width="368" height="31"/>
+                                <connections>
+                                    <action selector="sliderslided:" destination="FUr-7e-QwX" eventType="valueChanged" id="Huo-qV-0FJ"/>
+                                    <action selector="sliderslided:" destination="Dza-VP-gUe" eventType="valueChanged" id="vkX-DG-r3S"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.24313725490196078" green="0.2627450980392157" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="enA-Mw-ltD" firstAttribute="top" secondItem="xgy-XT-Xr8" secondAttribute="top" constant="20" id="0HL-Ko-RF9"/>
                             <constraint firstItem="PoP-vl-mfw" firstAttribute="leading" secondItem="xgy-XT-Xr8" secondAttribute="leading" id="Jbd-9O-D6A"/>
                             <constraint firstItem="enA-Mw-ltD" firstAttribute="leading" secondItem="xgy-XT-Xr8" secondAttribute="leading" constant="25" id="LX6-o7-KCO"/>
+                            <constraint firstItem="xgy-XT-Xr8" firstAttribute="bottom" secondItem="joz-qT-fWr" secondAttribute="bottom" constant="20" id="PMb-IH-HgH"/>
                             <constraint firstItem="xgy-XT-Xr8" firstAttribute="trailing" secondItem="enA-Mw-ltD" secondAttribute="trailing" constant="25" id="SZ3-FG-csJ"/>
+                            <constraint firstItem="joz-qT-fWr" firstAttribute="top" secondItem="PoP-vl-mfw" secondAttribute="bottom" constant="20" id="aqw-yj-7s7"/>
                             <constraint firstItem="PoP-vl-mfw" firstAttribute="top" secondItem="enA-Mw-ltD" secondAttribute="bottom" constant="20" id="gBO-cv-kHi"/>
-                            <constraint firstItem="xgy-XT-Xr8" firstAttribute="bottom" secondItem="PoP-vl-mfw" secondAttribute="bottom" id="iAp-Cc-1KU"/>
+                            <constraint firstItem="joz-qT-fWr" firstAttribute="leading" secondItem="xgy-XT-Xr8" secondAttribute="leading" constant="25" id="hsd-F8-gbH"/>
                             <constraint firstItem="xgy-XT-Xr8" firstAttribute="trailing" secondItem="PoP-vl-mfw" secondAttribute="trailing" id="mey-jR-R22"/>
+                            <constraint firstItem="xgy-XT-Xr8" firstAttribute="trailing" secondItem="joz-qT-fWr" secondAttribute="trailing" constant="25" id="vX2-ai-Fb7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xgy-XT-Xr8"/>
                     </view>
@@ -409,6 +415,7 @@
                     <navigationItem key="navigationItem" id="Bhy-Hv-RSf"/>
                     <connections>
                         <outlet property="sceneView" destination="PoP-vl-mfw" id="ZQz-gL-nqL"/>
+                        <outlet property="slider" destination="joz-qT-fWr" id="JH9-7Y-jJz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojk-dp-s2j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -496,7 +503,7 @@ A handful of residents are already infected, but infection rate remains slow. Ho
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlq-PS-t0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-849" y="695"/>
+            <point key="canvasLocation" x="-526" y="695"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

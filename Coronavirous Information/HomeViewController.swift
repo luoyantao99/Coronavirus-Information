@@ -12,10 +12,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    @IBOutlet weak var hometointro: UIButton!
-    @IBOutlet weak var Hometograph: UIButton!
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
