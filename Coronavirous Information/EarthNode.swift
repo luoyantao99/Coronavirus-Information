@@ -17,6 +17,8 @@ class EarthNode: SCNNode {
         self.geometry = SCNSphere(radius: 1)
         self.geometry?.firstMaterial?.diffuse.contents =
         UIImage(named: "Diffuse")
+        
+        /*
         self.geometry?.firstMaterial?.specular.contents =
         UIImage(named: "Specular")
         self.geometry?.firstMaterial?.emission.contents =
@@ -24,7 +26,7 @@ class EarthNode: SCNNode {
         self.geometry?.firstMaterial?.normal.contents =
         UIImage(named: "Normal")
         self.geometry?.firstMaterial?.shininess = 30
-        
+        */
         
     }
     

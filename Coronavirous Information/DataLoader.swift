@@ -19,10 +19,10 @@ public class DataLoader {
     @Published var historydatadarr = [HistoryData]()
     @Published var statedataarr = [StateData]()
     @Published var globaldataobj = globalData()
+    @Published var countryinfoarr = [country_info]()
     
     init() {
-        load_intro()
-        load_newest_data()
+        
        
     }
     
@@ -39,6 +39,30 @@ public class DataLoader {
                 let introdata_dec = try decoder.decode([IntroductionData].self, from: introdata)
                 
                 self.introductiondataarr = introdata_dec;
+            } catch{
+                print(error)
+            }
+        }
+        
+
+        
+        
+    }
+    
+    //
+    
+    func load_country_info(){
+        if let fileLocation = Bundle.main.url(forResource: "country", withExtension: "json"){
+            do {
+                let countrydata = try Data(contentsOf: fileLocation)
+                
+                let decoder = JSONDecoder()
+                
+                //create a data object
+                let countrydata_dec = try decoder.decode([country_info].self, from: countrydata)
+                
+                self.countryinfoarr = countrydata_dec;
+                
             } catch{
                 print(error)
             }
@@ -117,7 +141,44 @@ public class DataLoader {
             }
         task3.resume()
         sem.wait()
+            
+        let globdataMirror = Mirror(reflecting: globaldataobj)
         
+        //var datablock : [String:Int] = [:]
+        
+        
+        for (label,value) in globdataMirror.children{
+            guard let  label = label else {
+                continue
+            }
+            
+          
+            
+            var index = 0
+            
+            for i in 0...self.countryinfoarr.count{
+                if countryinfoarr[i].name == label{
+                    index = i
+                    break
+                }
+            }
+
+            
+            
+            if let ref = value as? [dayData]{
+                
+                
+                for j in 0...ref.count-1{
+                
+                    countryinfoarr[index].confirmed.append(ref[j].confirmed)
+                }
+                
+            } else {
+                 countryinfoarr[index].confirmed.append(0)
+            }
+ 
+        }
+          //print(self.countryinfoarr)
         
         }
         

@@ -14,7 +14,7 @@ import UIKit
 
 class IntroContentViewController: UIViewController {
     
-    var inputintroobj = IntroductionData(question_id: -1, question: "", CDC: "", WHO: "")
+    var inputintroobj = IntroductionData(question_id: 0, question: "", CDC: "", WHO: "")
         
     @IBOutlet weak var IntroTitle: UITextView!
     
@@ -36,15 +36,5 @@ class IntroContentViewController: UIViewController {
       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
