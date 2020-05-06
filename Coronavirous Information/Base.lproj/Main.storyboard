@@ -260,7 +260,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3po-We-A6Y"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="US" id="2Ke-xF-wNO"/>
+                    <tabBarItem key="tabBarItem" title="US" image="usa" id="2Ke-xF-wNO"/>
                     <navigationItem key="navigationItem" id="CmL-zA-xKt"/>
                     <connections>
                         <outlet property="Basic" destination="XMn-bF-3id" id="cPa-0D-E7O"/>
@@ -304,7 +304,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hwR-uw-o9x"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="State" id="pZz-RE-eMh"/>
+                    <tabBarItem key="tabBarItem" title="State" image="state" id="pZz-RE-eMh"/>
                     <navigationItem key="navigationItem" id="tec-Rt-pT7"/>
                     <connections>
                         <outlet property="chart" destination="Z7a-K0-Usy" id="Brx-r0-Ueg"/>
@@ -363,7 +363,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="862-xI-F6b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rate" id="EUj-AT-Nvm"/>
+                    <tabBarItem key="tabBarItem" title="Rate" image="rate" id="EUj-AT-Nvm"/>
                     <navigationItem key="navigationItem" id="xyq-O6-X55"/>
                     <connections>
                         <outlet property="Num" destination="QC4-Nv-b2C" id="xng-bT-4d7"/>
@@ -405,7 +405,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xgy-XT-Xr8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="World" id="xVV-2O-hnT"/>
+                    <tabBarItem key="tabBarItem" title="World" image="world" id="xVV-2O-hnT"/>
                     <navigationItem key="navigationItem" id="Bhy-Hv-RSf"/>
                     <connections>
                         <outlet property="sceneView" destination="PoP-vl-mfw" id="ZQz-gL-nqL"/>
@@ -418,7 +418,7 @@
         <!--Game View Controller-->
         <scene sceneID="d0h-HG-YhK">
             <objects>
-                <viewController id="0BQ-1V-Z2c" customClass="GameViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0BQ-1V-Z2c" customClass="GameViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nT3-uU-H3T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -493,4 +493,10 @@ A handful of residents are already infected, but infection rate remains slow. Ho
     <inferredMetricsTieBreakers>
         <segue reference="1nq-zc-IIO"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="rate" width="25" height="25"/>
+        <image name="state" width="25" height="25"/>
+        <image name="usa" width="25" height="25"/>
+        <image name="world" width="25" height="25"/>
+    </resources>
 </document>
