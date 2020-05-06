@@ -14,7 +14,10 @@ class GraphTabBarViewController: UITabBarController {
     
     let DL = DataLoader()
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

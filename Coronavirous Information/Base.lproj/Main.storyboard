@@ -117,8 +117,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuB-B8-cnP">
-                                <rect key="frame" x="127" y="213" width="161" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuB-B8-cnP">
+                                <rect key="frame" x="100" y="230" width="214" height="42"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.41568627450980389" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Introduction">
@@ -128,8 +128,8 @@
                                     <segue destination="uop-5q-aH3" kind="show" identifier="Hometointro_segue" id="djM-Wv-9cY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWD-he-U9D">
-                                <rect key="frame" x="100" y="373" width="214" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWD-he-U9D">
+                                <rect key="frame" x="100" y="322" width="214" height="42"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.41568627450980389" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Graph">
@@ -139,14 +139,14 @@
                                     <segue destination="L1n-vI-fsD" kind="show" identifier="Hometograph_segue" id="L7x-7f-4MK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wish you safe and healthy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UV-yY-bJG">
-                                <rect key="frame" x="55" y="96" width="339" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wish you safe and healthy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UV-yY-bJG">
+                                <rect key="frame" x="30" y="100" width="354" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOn-bf-FSg">
-                                <rect key="frame" x="100" y="548" width="214" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOn-bf-FSg">
+                                <rect key="frame" x="100" y="414" width="214" height="42"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.41392043546870799" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Mini Game">
@@ -427,7 +427,7 @@
             <objects>
                 <viewController id="0BQ-1V-Z2c" customClass="GameViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nT3-uU-H3T">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlP-WS-uF6">
@@ -458,11 +458,11 @@
             <objects>
                 <viewController id="rGX-Q1-MGI" customClass="GameMenuController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qQx-5u-6HK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx6-dc-mvz">
-                                <rect key="frame" x="184" y="654" width="46" height="42"/>
+                                <rect key="frame" x="184" y="634" width="46" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
@@ -492,7 +492,7 @@ A handful of residents are already infected, but infection rate remains slow. Ho
                             <constraint firstItem="xx6-dc-mvz" firstAttribute="centerX" secondItem="HaD-Rd-Eqd" secondAttribute="centerX" id="6W5-pV-JEw"/>
                             <constraint firstItem="QHf-oo-oBY" firstAttribute="centerX" secondItem="HaD-Rd-Eqd" secondAttribute="centerX" id="9Uz-kZ-kzG"/>
                             <constraint firstItem="HaD-Rd-Eqd" firstAttribute="bottom" secondItem="naB-7f-vDi" secondAttribute="bottom" constant="8" id="Euc-is-IN6"/>
-                            <constraint firstItem="HaD-Rd-Eqd" firstAttribute="bottom" secondItem="xx6-dc-mvz" secondAttribute="bottom" constant="20" id="JYe-qE-27x"/>
+                            <constraint firstItem="HaD-Rd-Eqd" firstAttribute="bottom" secondItem="xx6-dc-mvz" secondAttribute="bottom" constant="40" id="JYe-qE-27x"/>
                             <constraint firstItem="HaD-Rd-Eqd" firstAttribute="trailing" secondItem="QHf-oo-oBY" secondAttribute="trailing" constant="20" id="LEH-yL-lkf"/>
                             <constraint firstItem="QHf-oo-oBY" firstAttribute="top" secondItem="HaD-Rd-Eqd" secondAttribute="top" constant="20" id="M96-gA-3ku"/>
                             <constraint firstItem="HaD-Rd-Eqd" firstAttribute="trailing" secondItem="naB-7f-vDi" secondAttribute="trailing" constant="8" id="eYs-e2-eVg"/>
@@ -507,7 +507,7 @@ A handful of residents are already infected, but infection rate remains slow. Ho
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gnm-3B-gUD"/>
+        <segue reference="1nq-zc-IIO"/>
         <segue reference="u6s-9x-rHD"/>
     </inferredMetricsTieBreakers>
     <resources>
