@@ -22,6 +22,8 @@ class GraphWorldViewController: UIViewController {
     @IBOutlet weak var sceneView: SCNView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
        
         // Do any additional setup after loading the view.
         
@@ -30,10 +32,10 @@ class GraphWorldViewController: UIViewController {
         
         // change in the future
         
+   
         let inputgraphobjMirror = Mirror(reflecting: inputgraphobj)
         
         var datablock : [String:Int] = [:]
-        
         for (label,value) in inputgraphobjMirror.children{
             guard let  label = label else {
                 continue
@@ -47,6 +49,7 @@ class GraphWorldViewController: UIViewController {
         }
         
         //print(datablock)
+     
         
         // earth scene
      

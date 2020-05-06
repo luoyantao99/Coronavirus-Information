@@ -7,7 +7,7 @@
 //
 
 import SpriteKit
-class GameScene: SKScene, Alertable {
+class GameScene: SKScene {
     weak var viewController: UIViewController?
     
     // ----- basic info -----
@@ -34,10 +34,12 @@ class GameScene: SKScene, Alertable {
     let barHeight = CGFloat(25)
     let barWidth = CGFloat((700-130)/2)
     
-    // ----- infection calculation & balance -----
+    // ----- infection calculation & game balance -----
+    var infection_timer: Timer?
     var virus_array = [SKSpriteNode]()
     let time_interval = 0.05
-    var base_rate = CGFloat(1/500*0.05)
+    let hit_to_win = 50
+    var base_rate = CGFloat(1/600*0.05)
     let max_rate = CGFloat(1/20*0.05)
     let growth_rate = CGFloat(0.005)
     
@@ -69,8 +71,8 @@ class GameScene: SKScene, Alertable {
         let background = SKSpriteNode(imageNamed: "background")
         addChild(background)
         
-        drawDropZone()
-        drawFlyZone()
+        drawZone(zone_rect: dropZone)
+        drawZone(zone_rect: flyZone)
         
         let actions = [SKAction.run(sendBat), SKAction.wait(forDuration: 1.5),
                        SKAction.run(dropVirus), SKAction.run(sendBat),
@@ -120,26 +122,16 @@ class GameScene: SKScene, Alertable {
         addChild(infectionProgress)
         
         // infection handler timer
-        _ = Timer.scheduledTimer(timeInterval: time_interval, target: self,
+        infection_timer = Timer.scheduledTimer(timeInterval: time_interval, target: self,
         selector: #selector(infection_handler),
         userInfo: nil, repeats: true)
     }
     
     
-    func drawDropZone() {
+    func drawZone(zone_rect: CGRect) {
         let shape = SKShapeNode()
         let path = CGMutablePath()
-        path.addRect(dropZone)
-        shape.path = path
-        shape.lineWidth = Zone_lineWidth
-        addChild(shape)
-    }
-    
-    
-    func drawFlyZone() {
-        let shape = SKShapeNode()
-        let path = CGMutablePath()
-        path.addRect(flyZone)
+        path.addRect(zone_rect)
         shape.path = path
         shape.lineWidth = Zone_lineWidth
         addChild(shape)
@@ -216,7 +208,7 @@ class GameScene: SKScene, Alertable {
             if name == "corona" {
                 score+=1
                 touchedNode.run(SKAction.scale(to: 0, duration: 0.2))
-                virus_array.popLast()
+                _ = virus_array.popLast()
                 virusKilled = true
             }
         }
@@ -225,7 +217,7 @@ class GameScene: SKScene, Alertable {
 
     override func update(_ currentTime: TimeInterval) {
         if virusKilled == true {
-            if incrementCount != 2 {
+            if incrementCount != 100/hit_to_win {
                 researchProgress.progress += incrementValue
                 incrementCount += 1
             }
@@ -245,22 +237,13 @@ class GameScene: SKScene, Alertable {
             researchProgress.bar?.color = .green
         }
         
-        
         if !bat_array.isEmpty{
             if self.bat_array[0].position.x < self.min_x {
                 self.bat_array.remove(at: 0)
             }
         }
         
-        if researchProgress.progress == 1 {
-            showAlert(withTitle: "You Won!", message: "Alert message")
-            self.isPaused = true
-        }
-        else if infectionProgress.progress == 0 {
-            showAlert(withTitle: "You Lost!", message: "Alert message")
-            self.isPaused = true
-        }
-        
+        endGame()
     }
 
     
@@ -276,10 +259,35 @@ class GameScene: SKScene, Alertable {
             }
         }
         infectionProgress.progress -= base_rate
-        print("infection rate: \(base_rate)")
-        print("array length: \(virus_array.count)")
-        print()
     }
+    
+    
+    func endGame() {
+        if researchProgress.progress == 1 {
+            self.isPaused = true
+            let alertController = UIAlertController(title: "You Won!", message: "You successfully developed vaccine before it's too late. ", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
+                { (action: UIAlertAction!) in
+                    self.viewController!.performSegue(withIdentifier: "gameOverSegue", sender: self)
+                    self.viewController!.navigationController?.setNavigationBarHidden(false, animated: true)
+                }))
+            
+            viewController?.present(alertController, animated: true)
+        }
+        else if infectionProgress.progress == 0 {
+            self.isPaused = true
+            let alertController = UIAlertController(title: "You Lost!", message: "You failed to finish vaccine development before everyone is infected. ", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
+                { (action: UIAlertAction!) in
+                    self.viewController!.performSegue(withIdentifier: "gameOverSegue", sender: self)
+                    self.viewController!.navigationController?.setNavigationBarHidden(false, animated: true)
+                }))
+            
+            viewController?.present(alertController, animated: true)
+        }
+    }
+    
+    
     
 }
 

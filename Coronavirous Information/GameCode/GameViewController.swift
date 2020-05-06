@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.setNavigationBarHidden(true, animated: true)
         let scene = GameScene(size:CGSize(width: 700, height: 1051))
         scene.scaleMode = .aspectFill

@@ -25,11 +25,13 @@ class IntroContentViewController: UIViewController {
         // Do any additional setup after loading the view.
         IntroTitle.text = inputintroobj.question
         IntroTitle.font = UIFont(name:"Georgia-Bold",size:23 )
+        IntroTitle.textColor = UIColor.white
         
         total.isEditable = false;
         total.font = UIFont(name: "TimesNewRomanPSMT", size: 18)
         let String = "According to CDC\n\n" + inputintroobj.CDC + "\n\nAccording to  WHO\n\n" + inputintroobj.WHO
         total.text = String;
+        total.textColor = UIColor.white
         IntroTitle.isEditable = false
       
     }

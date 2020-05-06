@@ -75,6 +75,7 @@ class GraphUSViewController: UIViewController {
         lcd.addDataSet(pos_line)
       
         chart.data = lcd
+        chart.backgroundColor = UIColor.white
         chart.chartDescription?.text = "Chart for Confirmed Cases in US"
 
         //reflecting information
