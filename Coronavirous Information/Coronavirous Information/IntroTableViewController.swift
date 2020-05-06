@@ -37,9 +37,12 @@ class IntroTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
 
         // Configure the cell...
+        cell.backgroundColor = UIColor(displayP3Red: CGFloat(62.0/255), green: CGFloat(67.0/255), blue: CGFloat(100.0/255), alpha: 0.0)
         cell.textLabel?.text = introdataarr[indexPath.row].question
+        cell.textLabel?.textColor = UIColor .white
      
         return cell
     }

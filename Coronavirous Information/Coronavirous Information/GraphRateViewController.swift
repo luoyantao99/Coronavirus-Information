@@ -56,6 +56,7 @@ class GraphRateViewController: UIViewController {
         data.addDataSet(dea_line)
         chart.data = data
         chart.chartDescription?.text = "Chart for death rate and recovered rate"
+        chart.backgroundColor = UIColor.white
         
         //reflecting information
         var date = Int(rate_slider.value*Float(length))

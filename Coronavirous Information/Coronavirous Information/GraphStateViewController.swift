@@ -43,6 +43,7 @@ class GraphStateViewController: UIViewController {
         let bcd = BarChartData(dataSet: pos_bar)
         
         chart.data = bcd
+        chart.backgroundColor = UIColor.white
         chart.chartDescription?.text = "Chart for Confirmed Cases in different States"
      
         
