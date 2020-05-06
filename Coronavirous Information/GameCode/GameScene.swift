@@ -269,7 +269,7 @@ class GameScene: SKScene {
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
                 { (action: UIAlertAction!) in
                     self.viewController!.performSegue(withIdentifier: "gameOverSegue", sender: self)
-                    self.viewController!.navigationController?.setNavigationBarHidden(false, animated: true)
+                    //self.viewController!.navigationController?.setNavigationBarHidden(false, animated: true)
                 }))
             
             viewController?.present(alertController, animated: true)
@@ -280,7 +280,7 @@ class GameScene: SKScene {
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
                 { (action: UIAlertAction!) in
                     self.viewController!.performSegue(withIdentifier: "gameOverSegue", sender: self)
-                    self.viewController!.navigationController?.setNavigationBarHidden(false, animated: true)
+                    //self.viewController!.navigationController?.setNavigationBarHidden(false, animated: true)
                 }))
             
             viewController?.present(alertController, animated: true)

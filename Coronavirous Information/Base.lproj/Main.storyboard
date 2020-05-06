@@ -12,18 +12,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="IntroContentViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IOl-sh-WkX">
-                                <rect key="frame" x="25" y="186" width="364" height="525"/>
+                                <rect key="frame" x="25" y="142" width="364" height="549"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mR3-GS-nhJ">
-                                <rect key="frame" x="25" y="64" width="364" height="97"/>
+                                <rect key="frame" x="25" y="20" width="364" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mR3-GS-nhJ" secondAttribute="height" multiplier="364:97" id="REr-Ts-IL7"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="97" id="Th8-FY-URr"/>
@@ -82,7 +82,7 @@
             <objects>
                 <tableViewController id="uop-5q-aH3" customClass="IntroTableViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sbq-OI-G6E">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.24313725490196078" green="0.2627450980392157" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
@@ -207,7 +207,7 @@
             <objects>
                 <viewController id="FUr-7e-QwX" customClass="GraphUSViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="phQ-el-iuW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vge-bZ-OWZ">
@@ -278,11 +278,11 @@
             <objects>
                 <viewController id="t1Z-AW-bMM" customClass="GraphStateViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zN1-vW-dH8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-K0-Usy" customClass="HorizontalBarChartView" customModule="Charts">
-                                <rect key="frame" x="25" y="104.33333333333331" width="364" height="557.66666666666674"/>
+                                <rect key="frame" x="25" y="60.333333333333314" width="364" height="581.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmed Case in States" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hu-QL-Vbr">
@@ -319,7 +319,7 @@
             <objects>
                 <viewController id="cnF-mt-ejj" customClass="GraphRateViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EhL-Dr-SNX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-BF-hZp" customClass="LineChartView" customModule="Charts">
@@ -333,7 +333,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zu8-7U-6ms">
-                                <rect key="frame" x="23" y="637" width="368" height="31"/>
+                                <rect key="frame" x="23" y="617" width="368" height="31"/>
                                 <connections>
                                     <action selector="sliderslided:" destination="cnF-mt-ejj" eventType="valueChanged" id="B82-Wh-bWc"/>
                                 </connections>
@@ -380,7 +380,7 @@
             <objects>
                 <viewController id="Dza-VP-gUe" customClass="GraphWorldViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KHK-bR-1UJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PoP-vl-mfw">
@@ -420,11 +420,11 @@
             <objects>
                 <viewController id="0BQ-1V-Z2c" customClass="GameViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nT3-uU-H3T">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlP-WS-uF6">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                             </skView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -446,16 +446,16 @@
             </objects>
             <point key="canvasLocation" x="-1725" y="695"/>
         </scene>
-        <!--Game Menu-->
+        <!--Game Menu Controller-->
         <scene sceneID="KYq-kD-9tO">
             <objects>
-                <viewController id="rGX-Q1-MGI" sceneMemberID="viewController">
+                <viewController id="rGX-Q1-MGI" customClass="GameMenuController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qQx-5u-6HK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx6-dc-mvz">
-                                <rect key="frame" x="184" y="674" width="46" height="42"/>
+                                <rect key="frame" x="184" y="654" width="46" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
@@ -463,7 +463,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHf-oo-oBY">
-                                <rect key="frame" x="20" y="64" width="374" height="406"/>
+                                <rect key="frame" x="20" y="20" width="374" height="406"/>
                                 <string key="text">In this game, you the player will try to save NYC from the coronavirus. Bats will fly over the city and drop deadly virus. You need to prevent the virus from falling to the groud and vanish into thin air. With every successful hit on the virus, you will gain vaccine research points. The game is won when the vaccine research is completed. 
 
 A handful of residents are already infected, but infection rate remains slow. However, if you failed to stop viruses from spreading, more and more people in the city will get infected. The infection rate will grow exponentially depends on the number of viruses you missed. You will lose the game when the whole population gets infected. </string>
@@ -471,19 +471,28 @@ A handful of residents are already infected, but infection rate remains slow. Ho
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naB-7f-vDi">
+                                <rect key="frame" x="330" y="678" width="76" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <segue destination="7aH-Rn-Cnl" kind="show" id="u6s-9x-rHD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xx6-dc-mvz" firstAttribute="centerX" secondItem="HaD-Rd-Eqd" secondAttribute="centerX" id="6W5-pV-JEw"/>
                             <constraint firstItem="QHf-oo-oBY" firstAttribute="centerX" secondItem="HaD-Rd-Eqd" secondAttribute="centerX" id="9Uz-kZ-kzG"/>
+                            <constraint firstItem="HaD-Rd-Eqd" firstAttribute="bottom" secondItem="naB-7f-vDi" secondAttribute="bottom" constant="8" id="Euc-is-IN6"/>
                             <constraint firstItem="HaD-Rd-Eqd" firstAttribute="bottom" secondItem="xx6-dc-mvz" secondAttribute="bottom" constant="20" id="JYe-qE-27x"/>
                             <constraint firstItem="HaD-Rd-Eqd" firstAttribute="trailing" secondItem="QHf-oo-oBY" secondAttribute="trailing" constant="20" id="LEH-yL-lkf"/>
                             <constraint firstItem="QHf-oo-oBY" firstAttribute="top" secondItem="HaD-Rd-Eqd" secondAttribute="top" constant="20" id="M96-gA-3ku"/>
+                            <constraint firstItem="HaD-Rd-Eqd" firstAttribute="trailing" secondItem="naB-7f-vDi" secondAttribute="trailing" constant="8" id="eYs-e2-eVg"/>
                             <constraint firstItem="QHf-oo-oBY" firstAttribute="leading" secondItem="HaD-Rd-Eqd" secondAttribute="leading" constant="20" id="haF-QN-QC3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HaD-Rd-Eqd"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Game Menu" id="9f3-8y-aWU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlq-PS-t0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -492,6 +501,7 @@ A handful of residents are already infected, but infection rate remains slow. Ho
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="1nq-zc-IIO"/>
+        <segue reference="u6s-9x-rHD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="rate" width="25" height="25"/>
