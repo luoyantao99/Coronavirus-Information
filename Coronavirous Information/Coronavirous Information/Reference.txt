@@ -1,5 +1,0 @@
-Annotations / References Used (Runhai Lin):
-
-1 https://medium.com/@skoli/using-realm-and-charts-with-swift-3-in-ios-10-40c42e3838c0#.2gyymwfh8
-2 https://www.youtube.com/watch?v=3rpNDENQgPM
-3 https://www.youtube.com/watch?v=DAiheSmhEAE
