@@ -13,7 +13,6 @@
 		399E6D542460076F00973F10 /* EarthNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399E6D532460076F00973F10 /* EarthNode.swift */; };
 		39C50872245CFFAA00E81F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C50871245CFFAA00E81F12 /* AppDelegate.swift */; };
 		39C50874245CFFAA00E81F12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C50873245CFFAA00E81F12 /* SceneDelegate.swift */; };
-		39C50876245CFFAA00E81F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C50875245CFFAA00E81F12 /* ViewController.swift */; };
 		39C50879245CFFAA00E81F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C50877245CFFAA00E81F12 /* Main.storyboard */; };
 		39C5087C245CFFAA00E81F12 /* Coronavirous_Information.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39C5087A245CFFAA00E81F12 /* Coronavirous_Information.xcdatamodeld */; };
 		39C5087E245CFFAB00E81F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C5087D245CFFAB00E81F12 /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 		39C5086E245CFFAA00E81F12 /* Coronavirous Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coronavirous Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C50871245CFFAA00E81F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39C50873245CFFAA00E81F12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39C50875245CFFAA00E81F12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39C50878245CFFAA00E81F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39C5087B245CFFAA00E81F12 /* Coronavirous_Information.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coronavirous_Information.xcdatamodel; sourceTree = "<group>"; };
 		39C5087D245CFFAB00E81F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +78,7 @@
 			children = (
 				39C5088E245D113A00E81F12 /* IntroTableViewController.swift */,
 				39C50890245D1F8700E81F12 /* IntroContentViewController.swift */,
+				39C50888245D09B600E81F12 /* introduction.json */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -101,6 +100,7 @@
 				39C5089A245D602200E81F12 /* GraphUSViewController.swift */,
 				39C5089C245D603600E81F12 /* GraphStateViewController.swift */,
 				39C5089E245D606500E81F12 /* GraphRateViewController.swift */,
+				3988EEA32462B311000C1C82 /* country.json */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -130,9 +130,6 @@
 				D65B4A23246268B20024A3C2 /* GameCode */,
 				39C50871245CFFAA00E81F12 /* AppDelegate.swift */,
 				39C50873245CFFAA00E81F12 /* SceneDelegate.swift */,
-				39C50875245CFFAA00E81F12 /* ViewController.swift */,
-				39C50888245D09B600E81F12 /* introduction.json */,
-				3988EEA32462B311000C1C82 /* country.json */,
 				39C50877245CFFAA00E81F12 /* Main.storyboard */,
 				39C5087D245CFFAB00E81F12 /* Assets.xcassets */,
 				39C5087F245CFFAB00E81F12 /* LaunchScreen.storyboard */,
@@ -249,7 +246,6 @@
 				39C5088F245D113A00E81F12 /* IntroTableViewController.swift in Sources */,
 				39C50893245D32F700E81F12 /* HomeViewController.swift in Sources */,
 				39C5089B245D602200E81F12 /* GraphUSViewController.swift in Sources */,
-				39C50876245CFFAA00E81F12 /* ViewController.swift in Sources */,
 				39C50899245D600D00E81F12 /* GraphWorldViewController.swift in Sources */,
 				39C50872245CFFAA00E81F12 /* AppDelegate.swift in Sources */,
 				39C50874245CFFAA00E81F12 /* SceneDelegate.swift in Sources */,
