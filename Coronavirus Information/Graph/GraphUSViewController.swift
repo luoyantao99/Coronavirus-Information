@@ -17,6 +17,7 @@ class GraphUSViewController: UIViewController {
 
     var inputgraphobj = [HistoryData]()
     
+    // these are three lines are number of recovered, dead, and confirmed case
     var rec_lineChartEntry = [ChartDataEntry]()
     var dea_lineChartEntry = [ChartDataEntry]()
     var pos_lineChartEntry = [ChartDataEntry]()
@@ -31,10 +32,7 @@ class GraphUSViewController: UIViewController {
         super.viewDidLoad()
        
         self.title = "US"
-        
-        // Do any additional setup after loading the view.
-        
-        //input data
+    
         
         let length = inputgraphobj.count
         

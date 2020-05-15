@@ -24,15 +24,16 @@ class GraphTabBarViewController: UITabBarController {
         
         self.title = "Graph"
         
+        // ask dataloader to perform data loading
         DL.load_country_info()
-        
         DL.load_newest_data()
+        
         let worldvc = self.viewControllers![0] as! GraphWorldViewController
         let usvc = self.viewControllers![1] as! GraphUSViewController
         let statevc = self.viewControllers![2] as! GraphStateViewController
         let ratevc = self.viewControllers![3] as! GraphRateViewController
         
-        
+        // for every scene, setting the input object
         worldvc.inputgraphobj = DL.countryinfoarr
         worldvc.inputgraphobj2 = DL.countrydatearr
         usvc.inputgraphobj = DL.historydatadarr
@@ -42,6 +43,7 @@ class GraphTabBarViewController: UITabBarController {
         
         var rate_inf_arr = [rate_inf]()
         
+        // calculate recover and death rate
         for i in 1...length{
             let current = length-i
             let currentblock = DL.historydatadarr[current]

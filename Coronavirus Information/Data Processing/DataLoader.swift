@@ -94,6 +94,7 @@ public class DataLoader {
         
         sem.wait();
         
+        //loading state data
         if let url2 = URL(string:"https://covidtracking.com/api/v1/states/current.json"){
             let task2 = URLSession.shared.dataTask(with:url2){
                 data,response,error in
@@ -189,7 +190,7 @@ public class DataLoader {
         
     }
     
-    // loading news report obj with its title and url
+    // loading news report obj with title and url of news reports
     func load_news_report(){
         let sem = DispatchSemaphore.init(value: 0)
         

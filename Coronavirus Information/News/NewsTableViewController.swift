@@ -13,6 +13,8 @@ import UIKit
 class NewsTableViewController: UITableViewController {
     
     let DL = DataLoader()
+    
+    // newsinfoarr contains a data structure of news information with title and url
     var newsinfoarr = [news_info]()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,28 +44,25 @@ class NewsTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.backgroundColor = UIColor(displayP3Red: CGFloat(62.0/255), green: CGFloat(67.0/255), blue: CGFloat(100.0/255), alpha: 0.0)
-        
         cell.textLabel?.text = newsinfoarr[indexPath.row].title
         cell.textLabel?.numberOfLines = 0;
-        
         cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping;
-        
         cell.textLabel?.textColor = UIColor .white
-        
         return cell
     }
     
+    // open url when the cell is clicked
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath:IndexPath){
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        
         UIApplication.shared.open(URL(string: self.newsinfoarr[indexPath.row].webUrl)! as URL, options: [:], completionHandler: nil)
     }
-
+    
+    //setting the size of cell
     override func tableView(_ tableView: UITableView,
                heightForRowAt indexPath: IndexPath) -> CGFloat {
-       
-     
           return 160
-      
     }
 
 }

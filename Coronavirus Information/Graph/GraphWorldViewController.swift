@@ -40,9 +40,16 @@ extension UIView {
 }
 
 class GraphWorldViewController: UIViewController {
-
+    
+    //inputgraphobj is the array of data structure of country information
+    //It has a name, x position, y position and array of confirmed
+    //case by dates for every country
     var inputgraphobj = [country_info]()
+    
+    //inputgraphobj2 is the array of date
     var inputgraphobj2 = [String]()
+    
+    //generate a SCNView
     @IBOutlet weak var sceneView: SCNView!
     @IBOutlet weak var slider: UISlider!
     
@@ -50,6 +57,7 @@ class GraphWorldViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //finding the date based on the slider value
         self.title = "Global"
         let length = inputgraphobj[0].confirmed.count
         var date = Int(slider.value*Float(length))
@@ -58,12 +66,8 @@ class GraphWorldViewController: UIViewController {
         }
         
         datelabel.text = inputgraphobj2[date]
-       
-        // Do any additional setup after loading the view.
-        
-        
-        // earth scene
-     
+ 
+        // generate earth scene
         let earthscene = SCNScene()
         sceneView.scene = earthscene
         sceneView.backgroundColor = UIColor(displayP3Red: CGFloat(62.0/255), green: CGFloat(67.0/255), blue: CGFloat(100.0/255), alpha: 0.0)
@@ -110,6 +114,8 @@ class GraphWorldViewController: UIViewController {
         earthscene.rootNode.addChildNode(earthnode)
     }
     
+    //generate image is to generate the diffuse image of the
+    //earth based on coronavirus in different date
     func generateimage(date:Int) -> UIImage{
         let image = UIImage(named: "Diffuse")
                let imageView = UIImageView(image: image)
@@ -118,15 +124,12 @@ class GraphWorldViewController: UIViewController {
                myview.frame = CGRect(x: 0, y: 0, width: 344, height: 172)
                myview.addSubview(imageView)
                
-          
-              
+                // distinguishing the how severe the coronavirus crisis in different country
+                // then building circles on the diffuse image
                for i in 0...inputgraphobj.count-1{
                    let country = inputgraphobj[i]
                    let confirmed_number = country.confirmed[date]
-                   //print(country.name)
-                   //print(confirmed_number)
-                   //print(country.x)
-                   //print(country.y)
+              
                    var color = CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 0.8)
                    if (confirmed_number<100000){
                        color = CGColor(srgbRed: 1, green: 130.0/255, blue:0 , alpha: 0.8)
@@ -164,7 +167,7 @@ class GraphWorldViewController: UIViewController {
         
     }
     
-    
+    // adjusting earth model when slider slides
     @IBAction func sliderslided(_ sender: Any) {
         
         let length = inputgraphobj[0].confirmed.count
