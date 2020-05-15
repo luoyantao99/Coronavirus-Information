@@ -23,6 +23,7 @@ class IntroContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Introduction"
         IntroTitle.text = inputintroobj.question
         IntroTitle.font = UIFont(name:"Georgia-Bold",size:23 )
         IntroTitle.textColor = UIColor.white

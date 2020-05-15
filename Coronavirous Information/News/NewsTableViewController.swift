@@ -1,33 +1,31 @@
 //
-//  IntroTableViewController.swift
+//  NewsTableViewController.swift
 //  Coronavirous Information
 //
-//  IntroTableViewController.swift
-//  IntroTableViewController is the navigation bar for the basic
-//  introduction of coronavirous.
+//  This view controller includes links to different websites.
 //
-//  Created by Runhai Lin on 4/15/20.
+//  Created by Runhai on 5/15/20.
 //  Copyright © 2020 Runhai Lin. All rights reserved.
 //
 
 import UIKit
 
-class IntroTableViewController: UITableViewController {
+class NewsTableViewController: UITableViewController {
     
     let DL = DataLoader()
-
-    var introdataarr = [IntroductionData]()
+    var newsinfoarr = [news_info]()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DL.load_intro()
-        self.introdataarr = DL.introductiondataarr
-        self.title = "Introduction"
+        DL.load_news_report()
+        self.newsinfoarr = DL.newsinfoarr
+        self.title = "News"
 
     }
 
@@ -36,47 +34,36 @@ class IntroTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return introdataarr.count
+        return newsinfoarr.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newscell", for: indexPath)
 
         // Configure the cell...
         cell.backgroundColor = UIColor(displayP3Red: CGFloat(62.0/255), green: CGFloat(67.0/255), blue: CGFloat(100.0/255), alpha: 0.0)
-        cell.textLabel?.text = introdataarr[indexPath.row].question
+        
+        cell.textLabel?.text = newsinfoarr[indexPath.row].title
+        cell.textLabel?.numberOfLines = 0;
+        
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping;
+        
         cell.textLabel?.textColor = UIColor .white
-     
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath:IndexPath){
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "intro_segue", sender: introdataarr[indexPath.row])
+        UIApplication.shared.open(URL(string: self.newsinfoarr[indexPath.row].webUrl)! as URL, options: [:], completionHandler: nil)
     }
-    
+
     override func tableView(_ tableView: UITableView,
                heightForRowAt indexPath: IndexPath) -> CGFloat {
        
      
-          return 80
+          return 160
       
     }
-
-
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        let contentviewcontroller = segue.destination as! IntroContentViewController
-        contentviewcontroller.inputintroobj = sender as! IntroductionData
-        
-    }
-  
 
 }

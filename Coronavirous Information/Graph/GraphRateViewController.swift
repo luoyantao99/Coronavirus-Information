@@ -26,7 +26,8 @@ class GraphRateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print(self.inputgraphobj)
+        
+        self.title = "Rate"
         // Do any additional setup after loading the view.
         
         //inputing data from the input obj

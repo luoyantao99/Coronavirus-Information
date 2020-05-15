@@ -42,17 +42,22 @@ extension UIView {
 class GraphWorldViewController: UIViewController {
 
     var inputgraphobj = [country_info]()
+    var inputgraphobj2 = [String]()
     @IBOutlet weak var sceneView: SCNView!
     @IBOutlet weak var slider: UISlider!
     
+    @IBOutlet weak var datelabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Global"
         let length = inputgraphobj[0].confirmed.count
         var date = Int(slider.value*Float(length))
         if (date == length){
             date = date - 1
         }
+        
+        datelabel.text = inputgraphobj2[date]
        
         // Do any additional setup after loading the view.
         
@@ -170,6 +175,7 @@ class GraphWorldViewController: UIViewController {
             newdate = newdate - 1
         }
         
+        datelabel.text = inputgraphobj2[newdate]
         let image2 = generateimage(date: newdate)
 
         

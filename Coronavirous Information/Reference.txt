@@ -3,8 +3,8 @@ Annotations / References Used (Runhai Lin):
 1 The guideline for using charts as a module https://medium.com/@skoli/using-realm-and-charts-with-swift-3-in-ios-10-40c42e3838c0#.2gyymwfh8
 2 The guideline for downloading json file on internet https://www.youtube.com/watch?v=3rpNDENQgPM
 3 The guideline for building an earth scenekit https://www.youtube.com/watch?v=DAiheSmhEAE
-4 THe guideline for converting uiview to uiimage https://stackoverflow.com/questions/44511202/how-to-convert-uiview-to-uiimage-with-high-resolution
-
+4 The guideline for converting uiview to uiimage https://stackoverflow.com/questions/44511202/how-to-convert-uiview-to-uiimage-with-high-resolution
+5 The guideline for creating a curl request https://stackoverflow.com/questions/52032108/how-to-perform-a-curl-request-in-swift
 
 
 Tab Bar Icons

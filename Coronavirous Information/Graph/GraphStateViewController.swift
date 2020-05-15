@@ -23,7 +23,8 @@ class GraphStateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print(inputgraphobj)
+        
+        self.title = "State"
         
         let length = inputgraphobj.count
         for i in 0...length-1{

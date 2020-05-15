@@ -4,7 +4,7 @@
 //
 //  This tab bar controller is navigation view controller for graph view controller.
 //
-//  Created by Runhai LIn on 5/5/20.
+//  Created by Runhai Lun on 5/5/20.
 //  Copyright © 2020 Runhai Lin. All rights reserved.
 //
 
@@ -22,6 +22,8 @@ class GraphTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Graph"
+        
         DL.load_country_info()
         
         DL.load_newest_data()
@@ -32,6 +34,7 @@ class GraphTabBarViewController: UITabBarController {
         
         
         worldvc.inputgraphobj = DL.countryinfoarr
+        worldvc.inputgraphobj2 = DL.countrydatearr
         usvc.inputgraphobj = DL.historydatadarr
         statevc.inputgraphobj = DL.statedataarr
         

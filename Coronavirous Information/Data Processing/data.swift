@@ -143,3 +143,16 @@ struct country_info: Codable{
     var y:Int
     var confirmed:[Int]
 }
+
+struct news_info: Codable {
+    var title:String
+    var webUrl:String
+}
+
+struct news_obj:Codable{
+    var news: [news_info]
+    
+    init() {
+        self.news = []
+    }
+}
