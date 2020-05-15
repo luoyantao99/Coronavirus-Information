@@ -1,5 +1,5 @@
-# Coronavirous-Information
-Coronavirous Information iOS App
+# Coronavirus-Information
+Coronavirus Information iOS App
 
 Learn about coronavirus safety and readiness today with Coronavirus Info. You will not only find information on how the disease spreads, symptoms, treatment, prevention, and more on this app, you can also see the latest news on COVID-19, updates on cases in every state, maps for data tracking. With data tracking, you can find out about the current situation of the infection worldwide. For our US users, you can find state-level or even county-level statistics on COVID-19. The number of confirmed cases and number of deaths for every country will be displayed on an interactive map. 
 
