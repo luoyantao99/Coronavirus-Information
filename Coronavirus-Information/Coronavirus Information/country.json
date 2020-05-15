@@ -1,0 +1,267 @@
+[
+{
+	"name":"US",
+	"x":70,
+	"y":40,
+	"confirmed":[]
+
+},
+{
+	"name":"Spain",
+	"x":167,
+	"y":49,
+	"confirmed":[]
+
+},
+{
+	"name":"Italy",
+	"x":51,
+	"y":190,
+	"confirmed":[]
+
+},
+{
+	"name":"United_Kingdom",
+	"x":170,
+	"y":35,
+	"confirmed":[]
+
+},
+{
+	"name":"France",
+	"x":173,
+	"y":42,
+	"confirmed":[]
+
+},
+{
+	"name":"Russia",
+	"x":251,
+	"y":27,
+	"confirmed":[]
+
+},
+{
+	"name":"Germany",
+	"x":177,
+	"y":37,
+	"confirmed":[]
+
+},
+{
+	"name":"Turkey",
+	"x":200,
+	"y":50,
+	"confirmed":[]
+
+},
+{
+	"name":"Brazil",
+	"x":125,
+	"y":92,
+	"confirmed":[]
+
+},
+{
+	"name":"Iran",
+	"x":225,
+	"y":54,
+	"confirmed":[]
+
+},{
+	"name":"China",
+	"x":273,
+	"y":55,
+	"confirmed":[]
+
+},
+{
+	"name":"Canada",
+	"x":98,
+	"y":42,
+	"confirmed":[]
+
+},
+{
+	"name":"Belgium",
+	"x":178,
+	"y":34,
+	"confirmed":[]
+
+},
+{
+	"name":"Peru",
+	"x":96,
+	"y":87,
+	"confirmed":[]
+
+},
+{
+	"name":"India",
+	"x":246,
+	"y":64,
+	"confirmed":[]
+
+},
+{
+	"name":"Netherlands",
+	"x":101,
+	"y":75,
+	"confirmed":[]
+
+},
+{
+	"name":"Switzerland",
+	"x":178,
+	"y":40,
+	"confirmed":[]
+
+},
+{
+	"name":"Ecuador",
+	"x":100,
+	"y":80,
+	"confirmed":[]
+
+},
+{
+	"name":"Saudi_Arabia",
+	"x":213,
+	"y":60,
+	"confirmed":[]
+
+},
+{
+	"name":"Portugal",
+	"x":163,
+	"y":46,
+	"confirmed":[]
+
+},
+{
+	"name":"Sweden",
+	"x":191,
+	"y":24,
+	"confirmed":[]
+
+},
+{
+	"name":"Mexico",
+	"x":73,
+	"y":60,
+	"confirmed":[]
+
+},
+{
+	"name":"Ireland",
+	"x":165,
+	"y":35,
+	"confirmed":[]
+
+},
+{
+	"name":"Pakistan",
+	"x":236,
+	"y":54,
+	"confirmed":[]
+
+},
+{
+	"name":"Chile",
+	"x":105,
+	"y":117,
+	"confirmed":[]
+
+},
+{
+	"name":"Singapore",
+	"x":272,
+	"y":76,
+	"confirmed":[]
+
+},
+{
+	"name":"Belarus",
+	"x":201,
+	"y":35,
+	"confirmed":[]
+
+},
+{
+	"name":"Israel",
+	"x":205,
+	"y":57,
+	"confirmed":[]
+
+},
+{
+	"name":"Austria",
+	"x":191,
+	"y":38,
+	"confirmed":[]
+
+},{
+	"name":"Qatar",
+	"x":220,
+	"y":61,
+	"confirmed":[]
+
+},
+{
+	"name":"Japan",
+	"x":303,
+	"y":52,
+	"confirmed":[]
+
+},
+{
+	"name":"United_Arab_Emirates",
+	"x":225,
+	"y":63,
+	"confirmed":[]
+
+},
+{
+	"name":"Poland",
+	"x":192,
+	"y":34,
+	"confirmed":[]
+
+},
+{
+	"name":"Romania",
+	"x":198,
+	"y":42,
+	"confirmed":[]
+
+},
+{
+	"name":"Ukraine",
+	"x":204,
+	"y":39,
+	"confirmed":[]
+
+},
+{
+	"name":"Indonesia",
+	"x":283,
+	"y":87,
+	"confirmed":[]
+
+},
+{
+	"name":"Korea_South",
+	"x":295,
+	"y":51,
+	"confirmed":[]
+
+},
+{
+	"name":"Denmark",
+	"x":193,
+	"y":20,
+	"confirmed":[]
+
+}
+
+]
