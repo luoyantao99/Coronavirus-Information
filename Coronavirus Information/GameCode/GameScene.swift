@@ -82,7 +82,7 @@ class GameScene: SKScene {
 
         run(SKAction.repeatForever(SKAction.sequence(actions)))
         
-        // add bar UI
+        // add progress bar UI
         let vaccine_background = SKShapeNode(rectOf: CGSize(width: barWidth, height: barHeight), cornerRadius: 5)
         vaccine_background.position = CGPoint(x: min_x/2+30, y: max_y-barHeight/2)
         vaccine_background.zPosition = 2
@@ -200,6 +200,7 @@ class GameScene: SKScene {
     }
     
     
+    // handle research progress on successful touch
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch:UITouch = touches.first! as UITouch
         let positionInScene = touch.location(in: self)
@@ -214,7 +215,8 @@ class GameScene: SKScene {
         }
     }
     
-
+    
+    // update progress bar data, remove out of bound bats from the array
     override func update(_ currentTime: TimeInterval) {
         if virusKilled == true {
             if incrementCount != 100/hit_to_win {
@@ -247,7 +249,7 @@ class GameScene: SKScene {
     }
 
     
-    // infection handler
+    // infection handler: calculate infection rate
     @objc func infection_handler() {
         if (base_rate > max_rate) {
             base_rate = max_rate
@@ -262,6 +264,7 @@ class GameScene: SKScene {
     }
     
     
+    // check if end condition is satisfied, create game ending message
     func endGame() {
         if researchProgress.progress == 1 {
             self.isPaused = true
@@ -269,7 +272,6 @@ class GameScene: SKScene {
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
                 { (action: UIAlertAction!) in
                     self.viewController!.performSegue(withIdentifier: "gameOverSegue", sender: self)
-                    //self.viewController!.navigationController?.setNavigationBarHidden(false, animated: true)
                 }))
             
             viewController?.present(alertController, animated: true)
@@ -280,7 +282,6 @@ class GameScene: SKScene {
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
                 { (action: UIAlertAction!) in
                     self.viewController!.performSegue(withIdentifier: "gameOverSegue", sender: self)
-                    //self.viewController!.navigationController?.setNavigationBarHidden(false, animated: true)
                 }))
             
             viewController?.present(alertController, animated: true)
@@ -292,7 +293,7 @@ class GameScene: SKScene {
 }
 
 
-
+// custom progress bar class
 class ProgressBar:SKNode {
     var bar: SKSpriteNode?
     var _progress:CGFloat = 0
