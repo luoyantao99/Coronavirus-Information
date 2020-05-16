@@ -10,7 +10,7 @@
         <!--Intro Content View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="IntroContentViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroContentViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
         <!--Graph Tab Bar View Controller-->
         <scene sceneID="9Vz-jy-1Cd">
             <objects>
-                <tabBarController id="L1n-vI-fsD" customClass="GraphTabBarViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="L1n-vI-fsD" customClass="GraphTabBarViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fSC-yh-JEJ"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vj3-Ww-e4Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -80,7 +80,7 @@
         <!--Intro Table View Controller-->
         <scene sceneID="atR-Is-2Ca">
             <objects>
-                <tableViewController id="uop-5q-aH3" customClass="IntroTableViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uop-5q-aH3" customClass="IntroTableViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sbq-OI-G6E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +112,7 @@
         <!--News Table View Controller-->
         <scene sceneID="YdN-D9-DFg">
             <objects>
-                <tableViewController id="bqj-6D-Pe1" customClass="NewsTableViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bqj-6D-Pe1" customClass="NewsTableViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="R3a-AR-qf1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,9 +141,9 @@
         <!--Home View Controller-->
         <scene sceneID="XhX-fu-iFg">
             <objects>
-                <viewController id="7aH-Rn-Cnl" customClass="HomeViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7aH-Rn-Cnl" customClass="HomeViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cu8-Xh-XAS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuB-B8-cnP">
@@ -244,7 +244,7 @@
         <!--US-->
         <scene sceneID="KDe-Zj-Lsa">
             <objects>
-                <viewController id="FUr-7e-QwX" customClass="GraphUSViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FUr-7e-QwX" customClass="GraphUSViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="phQ-el-iuW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,13 +315,13 @@
         <!--State-->
         <scene sceneID="EUF-hg-Qrh">
             <objects>
-                <viewController id="t1Z-AW-bMM" customClass="GraphStateViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t1Z-AW-bMM" customClass="GraphStateViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zN1-vW-dH8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-K0-Usy" customClass="HorizontalBarChartView" customModule="Charts">
-                                <rect key="frame" x="25" y="60.333333333333314" width="364" height="581.66666666666674"/>
+                                <rect key="frame" x="0.0" y="60.333333333333314" width="414" height="606.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmed Case in States" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hu-QL-Vbr">
@@ -333,11 +333,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.24313725490196078" green="0.2627450980392157" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z7a-K0-Usy" firstAttribute="leading" secondItem="hwR-uw-o9x" secondAttribute="leading" constant="25" id="0gB-Vw-34B"/>
+                            <constraint firstItem="Z7a-K0-Usy" firstAttribute="leading" secondItem="hwR-uw-o9x" secondAttribute="leading" id="0gB-Vw-34B"/>
                             <constraint firstItem="Z7a-K0-Usy" firstAttribute="top" secondItem="5Hu-QL-Vbr" secondAttribute="bottom" constant="20" id="HJp-8k-j2k"/>
                             <constraint firstItem="5Hu-QL-Vbr" firstAttribute="leading" secondItem="hwR-uw-o9x" secondAttribute="leading" constant="25" id="c6Y-Eh-SPR"/>
-                            <constraint firstItem="hwR-uw-o9x" firstAttribute="bottom" secondItem="Z7a-K0-Usy" secondAttribute="bottom" constant="25" id="caU-BH-Q7p"/>
-                            <constraint firstItem="hwR-uw-o9x" firstAttribute="trailing" secondItem="Z7a-K0-Usy" secondAttribute="trailing" constant="25" id="snQ-0h-v0V"/>
+                            <constraint firstItem="hwR-uw-o9x" firstAttribute="bottom" secondItem="Z7a-K0-Usy" secondAttribute="bottom" id="caU-BH-Q7p"/>
+                            <constraint firstItem="hwR-uw-o9x" firstAttribute="trailing" secondItem="Z7a-K0-Usy" secondAttribute="trailing" id="snQ-0h-v0V"/>
                             <constraint firstItem="5Hu-QL-Vbr" firstAttribute="top" secondItem="hwR-uw-o9x" secondAttribute="top" constant="20" id="tD3-ze-XKK"/>
                             <constraint firstItem="hwR-uw-o9x" firstAttribute="trailing" secondItem="5Hu-QL-Vbr" secondAttribute="trailing" constant="25" id="vj1-mu-rmf"/>
                         </constraints>
@@ -356,7 +356,7 @@
         <!--Rate-->
         <scene sceneID="fFS-YG-MKH">
             <objects>
-                <viewController id="cnF-mt-ejj" customClass="GraphRateViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cnF-mt-ejj" customClass="GraphRateViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EhL-Dr-SNX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -417,7 +417,7 @@
         <!--World-->
         <scene sceneID="FYf-7D-9kZ">
             <objects>
-                <viewController id="Dza-VP-gUe" customClass="GraphWorldViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dza-VP-gUe" customClass="GraphWorldViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KHK-bR-1UJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -504,7 +504,7 @@
         <!--Game View Controller-->
         <scene sceneID="d0h-HG-YhK">
             <objects>
-                <viewController id="0BQ-1V-Z2c" customClass="GameViewController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0BQ-1V-Z2c" customClass="GameViewController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nT3-uU-H3T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -535,7 +535,7 @@
         <!--Game Menu Controller-->
         <scene sceneID="KYq-kD-9tO">
             <objects>
-                <viewController id="rGX-Q1-MGI" customClass="GameMenuController" customModule="Coronavirous_Information" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rGX-Q1-MGI" customClass="GameMenuController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qQx-5u-6HK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

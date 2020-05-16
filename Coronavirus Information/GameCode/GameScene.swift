@@ -266,7 +266,7 @@ class GameScene: SKScene {
     
     // check if end condition is satisfied, create game ending message
     func endGame() {
-        // pause the game animation, stop the timer, send out warning message
+        // pause the game animation, stop the timer, send out alert message
         if researchProgress.progress == 1 {
             self.isPaused = true
             infection_timer?.invalidate()
