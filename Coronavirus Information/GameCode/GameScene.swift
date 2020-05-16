@@ -266,8 +266,11 @@ class GameScene: SKScene {
     
     // check if end condition is satisfied, create game ending message
     func endGame() {
+        // pause the game animation, stop the timer, send out warning message
         if researchProgress.progress == 1 {
             self.isPaused = true
+            infection_timer?.invalidate()
+            infection_timer = nil
             let alertController = UIAlertController(title: "You Won!", message: "You successfully developed vaccine before it's too late. ", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
                 { (action: UIAlertAction!) in
@@ -278,6 +281,8 @@ class GameScene: SKScene {
         }
         else if infectionProgress.progress == 0 {
             self.isPaused = true
+            infection_timer?.invalidate()
+            infection_timer = nil
             let alertController = UIAlertController(title: "You Lost!", message: "You failed to finish vaccine development before everyone is infected. ", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
                 { (action: UIAlertAction!) in
