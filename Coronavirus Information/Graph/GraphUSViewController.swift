@@ -30,9 +30,8 @@ class GraphUSViewController: UIViewController {
     @IBOutlet weak var us_slider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         self.title = "US"
-    
         
         let length = inputgraphobj.count
         

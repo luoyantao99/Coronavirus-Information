@@ -231,6 +231,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iso-Zr-k9e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.24313725490196078" green="0.2627450980392157" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -261,8 +265,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ova-a7-hCd" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="25" y="104" width="369" height="431"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ova-a7-hCd" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="60.333333333333343" width="414" height="470.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Confirmed Case in States" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2F-yC-I3v">
@@ -281,7 +285,7 @@
                         <color key="backgroundColor" red="0.24313725490196078" green="0.2627450980392157" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vge-bZ-OWZ" firstAttribute="leading" secondItem="3po-We-A6Y" secondAttribute="leading" constant="25" id="9wK-nE-g2h"/>
-                            <constraint firstItem="3po-We-A6Y" firstAttribute="trailing" secondItem="ova-a7-hCd" secondAttribute="trailing" constant="25" id="GpW-lJ-R3M"/>
+                            <constraint firstItem="3po-We-A6Y" firstAttribute="trailing" secondItem="ova-a7-hCd" secondAttribute="trailing" id="GpW-lJ-R3M"/>
                             <constraint firstItem="3po-We-A6Y" firstAttribute="trailing" secondItem="vge-bZ-OWZ" secondAttribute="trailing" constant="25" id="Gyv-p8-r0l"/>
                             <constraint firstItem="vge-bZ-OWZ" firstAttribute="top" secondItem="nj4-tj-Pg2" secondAttribute="bottom" constant="20" id="MOd-Mw-iIX"/>
                             <constraint firstItem="nj4-tj-Pg2" firstAttribute="leading" secondItem="3po-We-A6Y" secondAttribute="leading" constant="25" id="PWV-Jx-O0J"/>
@@ -292,7 +296,7 @@
                             <constraint firstItem="c2F-yC-I3v" firstAttribute="top" secondItem="3po-We-A6Y" secondAttribute="top" constant="20" id="i3c-HV-huP"/>
                             <constraint firstItem="3po-We-A6Y" firstAttribute="bottom" secondItem="vge-bZ-OWZ" secondAttribute="bottom" constant="20" id="iVS-ah-u2o"/>
                             <constraint firstItem="ova-a7-hCd" firstAttribute="top" secondItem="c2F-yC-I3v" secondAttribute="bottom" constant="20" id="lKT-d2-TMo"/>
-                            <constraint firstItem="ova-a7-hCd" firstAttribute="leading" secondItem="3po-We-A6Y" secondAttribute="leading" constant="25" id="mrc-zL-OlS"/>
+                            <constraint firstItem="ova-a7-hCd" firstAttribute="leading" secondItem="3po-We-A6Y" secondAttribute="leading" id="mrc-zL-OlS"/>
                             <constraint firstItem="XMn-bF-3id" firstAttribute="top" secondItem="ova-a7-hCd" secondAttribute="bottom" constant="20" id="nN4-X3-l0u"/>
                             <constraint firstItem="3po-We-A6Y" firstAttribute="trailing" secondItem="nj4-tj-Pg2" secondAttribute="trailing" constant="25" id="nnO-gZ-ROS"/>
                             <constraint firstItem="3po-We-A6Y" firstAttribute="trailing" secondItem="c2F-yC-I3v" secondAttribute="trailing" constant="25" id="qnC-Qa-Z7V"/>
@@ -361,8 +365,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-BF-hZp" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="25" y="110" width="364" height="479"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-BF-hZp" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="60.333333333333343" width="414" height="508.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC4-Nv-b2C">
@@ -387,13 +391,13 @@
                         <color key="backgroundColor" red="0.24313725490196078" green="0.2627450980392157" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MSW-BF-hZp" firstAttribute="top" secondItem="jL0-go-TAW" secondAttribute="bottom" constant="20" id="05i-ac-cvd"/>
-                            <constraint firstItem="862-xI-F6b" firstAttribute="trailing" secondItem="MSW-BF-hZp" secondAttribute="trailing" constant="25" id="3wA-In-UMp"/>
+                            <constraint firstItem="862-xI-F6b" firstAttribute="trailing" secondItem="MSW-BF-hZp" secondAttribute="trailing" id="3wA-In-UMp"/>
                             <constraint firstItem="QC4-Nv-b2C" firstAttribute="leading" secondItem="862-xI-F6b" secondAttribute="leading" constant="25" id="9Hs-Qz-Mwr"/>
                             <constraint firstItem="862-xI-F6b" firstAttribute="trailing" secondItem="zu8-7U-6ms" secondAttribute="trailing" constant="25" id="9Vq-ve-pY9"/>
                             <constraint firstItem="862-xI-F6b" firstAttribute="trailing" secondItem="QC4-Nv-b2C" secondAttribute="trailing" constant="25" id="FI7-OW-lzT"/>
                             <constraint firstItem="862-xI-F6b" firstAttribute="trailing" secondItem="jL0-go-TAW" secondAttribute="trailing" constant="25" id="Rao-av-d8x"/>
                             <constraint firstItem="862-xI-F6b" firstAttribute="bottom" secondItem="zu8-7U-6ms" secondAttribute="bottom" constant="20" id="Sf0-Kr-M7B"/>
-                            <constraint firstItem="MSW-BF-hZp" firstAttribute="leading" secondItem="862-xI-F6b" secondAttribute="leading" constant="25" id="VlD-z5-RHC"/>
+                            <constraint firstItem="MSW-BF-hZp" firstAttribute="leading" secondItem="862-xI-F6b" secondAttribute="leading" id="VlD-z5-RHC"/>
                             <constraint firstItem="zu8-7U-6ms" firstAttribute="leading" secondItem="862-xI-F6b" secondAttribute="leading" constant="25" id="XD6-C6-nO2"/>
                             <constraint firstItem="jL0-go-TAW" firstAttribute="leading" secondItem="862-xI-F6b" secondAttribute="leading" constant="25" id="ZdK-qs-6Yl"/>
                             <constraint firstItem="zu8-7U-6ms" firstAttribute="top" secondItem="QC4-Nv-b2C" secondAttribute="bottom" constant="10" id="jzu-JP-WQm"/>
@@ -537,13 +541,15 @@
             <objects>
                 <viewController id="rGX-Q1-MGI" customClass="GameMenuController" customModule="Coronavirus_Information" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qQx-5u-6HK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx6-dc-mvz">
                                 <rect key="frame" x="184" y="634" width="46" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Play"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="0BQ-1V-Z2c" kind="show" id="uwi-IF-a7d"/>
                                 </connections>
@@ -554,19 +560,21 @@
 
 A handful of residents are already infected, but infection rate remains slow. However, if you failed to stop viruses from spreading, more and more people in the city will get infected. The infection rate will grow exponentially depends on the number of viruses you missed. You will lose the game when the whole population gets infected. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naB-7f-vDi">
                                 <rect key="frame" x="330" y="678" width="76" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Main Menu"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="7aH-Rn-Cnl" kind="show" id="u6s-9x-rHD"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.24313725490196078" green="0.2627450980392157" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xx6-dc-mvz" firstAttribute="centerX" secondItem="HaD-Rd-Eqd" secondAttribute="centerX" id="6W5-pV-JEw"/>
                             <constraint firstItem="QHf-oo-oBY" firstAttribute="centerX" secondItem="HaD-Rd-Eqd" secondAttribute="centerX" id="9Uz-kZ-kzG"/>
